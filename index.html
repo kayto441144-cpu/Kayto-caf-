@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كايتو كافيه | القائمة</title>
+<style>
+:root{
+  --curry:#D6A332;
+  --sesame:#E1D9B8;
+  --navy:#2C4364;
+  --cream:#f7f1df;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--navy);font-family:Arial,"Tahoma",sans-serif}
+.hero{min-height:72vh;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#222}
+.hero img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(44,67,100,.9),rgba(44,67,100,.08) 70%)}
+.hero-content{position:relative;z-index:1;padding:32px 22px;color:white;width:100%}
+.logo{display:inline-block;background:var(--curry);color:var(--navy);padding:7px 14px;border-radius:999px;font-weight:800;font-size:13px;margin-bottom:10px}
+h1{font-size:46px;line-height:1;margin:0 0 10px;font-weight:900}
+.hero p{margin:0;font-size:16px;color:var(--sesame)}
+nav{position:sticky;top:0;z-index:10;background:rgba(247,241,223,.96);backdrop-filter:blur(10px);padding:12px;display:flex;gap:9px;overflow:auto}
+nav a{white-space:nowrap;text-decoration:none;background:var(--navy);color:white;padding:11px 15px;border-radius:999px;font-size:14px}
+main{padding:20px 16px 50px;max-width:760px;margin:auto}
+section{margin-top:28px}
+.section-title{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.section-title span{width:10px;height:34px;background:var(--curry);border-radius:5px}
+h2{margin:0;font-size:25px}
+.card{background:white;border:1px solid rgba(44,67,100,.12);border-radius:18px;padding:15px;margin:10px 0;display:flex;justify-content:space-between;align-items:center;box-shadow:0 5px 18px rgba(44,67,100,.07)}
+.item-name{font-weight:800;font-size:17px}
+.item-note{font-size:12px;color:#718096;margin-top:4px}
+.price{font-weight:900;color:var(--navy);background:var(--sesame);padding:8px 11px;border-radius:12px;white-space:nowrap}
+footer{text-align:center;background:var(--navy);color:var(--sesame);padding:28px 18px}
+.qr-note{margin-top:8px;font-size:12px;opacity:.8}
+@media(max-width:420px){h1{font-size:40px}.hero{min-height:68vh}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <!-- استبدل الصورة التالية بصورة الكافيه -->
+  <img src="cafe.jpg" alt="كايتو كافيه">
+  <div class="hero-content">
+    <div class="logo">KAITO CAFE</div>
+    <h1>كايتو كافيه</h1>
+    <p>مينيو الكافيه — اختر صنفك واستمتع.</p>
+  </div>
+</header>
+
+<nav aria-label="أقسام القائمة">
+  <a href="#drinks">المشروبات</a>
+  <a href="#desserts">الحلويات</a>
+  <a href="#hot">المشروبات الساخنة</a>
+  <a href="#cold">المشروبات الباردة</a>
+</nav>
+
+<main>
+  <section id="drinks">
+    <div class="section-title"><span></span><h2>المشروبات</h2></div>
+    <div class="card"><div><div class="item-name">شاي</div><div class="item-note">شاي كلاسيكي</div></div><div class="price">€</div></div>
+    <div class="card"><div><div class="item-name">شاي كرك</div><div class="item-note">شاي بالحليب والبهارات</div></div><div class="price">€</div></div>
+    <div class="card"><div><div class="item-name">كابتشينو إيطالي</div><div class="item-note">قهوة إيطالية بحليب رغوي</div></div><div class="price">€</div></div>
+    <div class="card"><div><div class="item-name">قهوة</div><div class="item-note">قهوة ساخنة</div></div><div class="price">€</div></div>
+    <div class="card"><div><div class="item-name">قهوة فرنسية</div><div class="item-note">نكهة غنية ومميزة</div></div><div class="price">€</div></div>
+    <div class="card"><div><div class="item-name">سحلب</div><div class="item-note">مشروب شتوي كريمي</div></div><div class="price">€</div></div>
+    <div class="card"><div><div class="item-name">كمون ليمون</div><div class="item-note">مشروب منعش</div></div><div class="price">€</div></div>
+    <div class="card"><div><div class="item-name">زهورات</div><div class="item-note">أعشاب عطرية</div></div><div class="price">€</div></div>
+  </section>
+
+  <section id="desserts">
+    <div class="section-title"><span></span><h2>الحلويات</h2></div>
+    <div class="card"><div><div class="item-name">حلويات الكافيه</div><div class="item-note">أضف أصنافك وأسعارها هنا</div></div><div class="price">€</div></div>
+    <div class="card"><div><div class="item-name">قطعة اليوم</div><div class="item-note">اسألنا عن المتوفر</div></div><div class="price">€</div></div>
+  </section>
+
+  <section id="hot">
+    <div class="section-title"><span></span><h2>المشروبات الساخنة</h2></div>
+    <div class="card"><div><div class="item-name">إسبريسو</div><div class="item-note">قهوة مركزة</div></div><div class="price">€</div></div>
+    <div class="card"><div><div class="item-name">لاتيه</div><div class="item-note">إسبريسو وحليب</div></div><div class="price">€</div></div>
+  </section>
+
+  <section id="cold">
+    <div class="section-title"><span></span><h2>المشروبات الباردة</h2></div>
+    <div class="card"><div><div class="item-name">آيس كوفي</div><div class="item-note">قهوة باردة ومنعشة</div></div><div class="price">€</div></div>
+    <div class="card"><div><div class="item-name">مشروب بارد</div><div class="item-note">اسأل عن النكهات المتوفرة</div></div><div class="price">€</div></div>
+  </section>
+</main>
+
+<footer>
+  <strong>كايتو كافيه</strong>
+  <div class="qr-note">امسح QR Code للوصول إلى القائمة الرقمية</div>
+</footer>
+
+</body>
+</html>
